@@ -1,0 +1,7 @@
+// "There's a Script For That!" SharePoint Training Course
+// Accompanying Source Code
+_spBodyOnLoadFunctionNames.push("helloWorld");
+function helloWorld() {
+  // Hello World!
+  alert("Hello, World!");
+}
