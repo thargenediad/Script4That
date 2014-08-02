@@ -1,7 +1,7 @@
 // "There's a Script For That!" SharePoint Training Course
 // Accompanying Source Code
-_spBodyOnLoadFunctionNames.push("helloWorld");
-function helloWorld() {
-  // Hello World!
-  alert("Hello, World!");
+_spBodyOnLoadFunctionNames.push("handlePageOnLoadEvent");
+function handlePageOnLoadEvent() {
+  // change the 'Calendar' text to 'Test Calendar'
+  document.getElementById('WebPartTitleWPQ2').getElementsByTagName('SPAN')[0].innerText = 'Test Calendar';
 }
