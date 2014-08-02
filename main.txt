@@ -5,7 +5,7 @@ function handlePageOnLoadEvent() {
   // avoid conflict with other JavaScript libraries
   var j$ = jQuery.noConflict();
 
-  // remove are target <span> nodes
+  // remove our target <span> nodes
   j$('#WebPartTitleWPQ2 span').remove();
 
   // change the 'Calendar' text to 'Test Calendar'
