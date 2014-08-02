@@ -5,6 +5,9 @@ function handlePageOnLoadEvent() {
   // avoid conflict with other JavaScript libraries
   var j$ = jQuery.noConflict();
 
+  // remove are target <span> nodes
+  j$('#WebPartTitleWPQ2 span').remove();
+
   // change the 'Calendar' text to 'Test Calendar'
-  j$('#WebPartTitleWPQ2 span').first().text('Test Calendar');
+  document.getElementById('#WebPartTitleWPQ2').getElementsByTagName('SPAN')[0].firstChild.nodeValue = 'Test Calendar';
 }
