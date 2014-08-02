@@ -2,9 +2,6 @@
 // Accompanying Source Code
 _spBodyOnLoadFunctionNames.push("handlePageOnLoadEvent");
 function handlePageOnLoadEvent() {
-  // avoid conflict with other JavaScript libraries
-  var j$ = jQuery.noConflict();
-
   // change the 'Calendar' text to 'Test Calendar'
-  j$('#WebPartTitleWPQ2 span').first().text('Test Calendar');
+  $('#WebPartTitleWPQ2 span').first().text('Test Calendar');
 }
