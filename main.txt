@@ -3,5 +3,5 @@
 _spBodyOnLoadFunctionNames.push("handlePageOnLoadEvent");
 function handlePageOnLoadEvent() {
   // change the 'Calendar' text to 'Test Calendar'
-  document.getElementById('WebPartTitleWPQ2').getElementsByTagName('SPAN')[0].innerText = 'Test Calendar';
+  jQuery('#WebPartTitleWPQ2 span').first().text('Test Calendar');
 }
