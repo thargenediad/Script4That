@@ -1,5 +1,16 @@
 // "There's a Script For That!" SharePoint Training Course
 // Accompanying Source Code
+
+/* console shim */
+(function () {
+    var f = function () {};
+    if (!window.console) {
+        window.console = {
+            log:f, info:f, warn:f, debug:f, error:f
+        };
+    }
+}());
+
 _spBodyOnLoadFunctionNames.push("handlePageOnLoadEvent");
 function handlePageOnLoadEvent() {
 
@@ -12,5 +23,5 @@ function handlePageOnLoadEvent() {
   } catch(e) {
     console.error("My Custom Error Message: " + e.message);
   }
-  
+
 }
