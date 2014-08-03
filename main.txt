@@ -2,12 +2,10 @@
 // Accompanying Source Code
 _spBodyOnLoadFunctionNames.push("handlePageOnLoadEvent");
 function handlePageOnLoadEvent() {
-  // avoid conflict with other JavaScript libraries
-  var j$ = jQuery.noConflict();
 
   // remove our target <span> nodes
-  j$('#WebPartTitleWPQ2 span').remove();
+  $('#WebPartTitleWPQ2 span').remove();
 
   // change the 'Calendar' text to 'Test Calendar'
-  document.getElementById('WebPartTitleWPQ2').getElementsByTagName('SPAN')[0].firstChild.nodeValue = 'Test Calendar';
+  $('#WebPartTitleWPQ2 span').first().text('Test Calendar');
 }
