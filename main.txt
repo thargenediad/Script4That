@@ -10,7 +10,7 @@ function handlePageOnLoadEvent() {
   try {
     document.getElementById('WebPartTitleWPQ2').getElementsByTagName('SPAN')[0].firstChild.nodeValue = 'Test Calendar';
   } catch(e) {
-    console.error("My Custom Error Message: " + e.stack);
+    console.error("My Custom Error Message: " + e.message);
   }
   
 }
