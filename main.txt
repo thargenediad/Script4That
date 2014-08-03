@@ -7,5 +7,5 @@ function handlePageOnLoadEvent() {
   $('#WebPartTitleWPQ2 span').remove();
 
   // change the 'Calendar' text to 'Test Calendar'
-  $('#WebPartTitleWPQ2 span').first().text('Test Calendar');
+  document.getElementById('WebPartTitleWPQ2').getElementsByTagName('SPAN')[0].firstChild.nodeValue = 'Test Calendar';
 }
